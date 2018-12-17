@@ -50,16 +50,16 @@
 		795A9ECDDCD5639159D8AF07 /* Pods-LuckyDayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyDayTests/Pods-LuckyDayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9AA82B1870E067E8FE6422C /* Pods-LuckyDayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDayUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyDayUITests/Pods-LuckyDayUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D968BD6B9CB97736919B7BB2 /* Pods_LuckyDayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyDayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1B8546021C81F9400E40290 /* LuckyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B8546021C81F9400E40290 /* code-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "code-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B8546321C81F9400E40290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1B8546821C81F9400E40290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1B8546A21C81F9600E40290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1B8546D21C81F9600E40290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1B8546F21C81F9600E40290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1B8547421C81F9600E40290 /* LuckyDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B8547421C81F9600E40290 /* code-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "code-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B8547821C81F9600E40290 /* LuckyDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyDayTests.swift; sourceTree = "<group>"; };
 		F1B8547A21C81F9600E40290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1B8547F21C81F9600E40290 /* LuckyDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B8547F21C81F9600E40290 /* code-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "code-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B8548321C81F9600E40290 /* LuckyDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyDayUITests.swift; sourceTree = "<group>"; };
 		F1B8548521C81F9600E40290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1B8549121C822DF00E40290 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -135,9 +135,9 @@
 		F1B8546121C81F9400E40290 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F1B8546021C81F9400E40290 /* LuckyDay.app */,
-				F1B8547421C81F9600E40290 /* LuckyDayTests.xctest */,
-				F1B8547F21C81F9600E40290 /* LuckyDayUITests.xctest */,
+				F1B8546021C81F9400E40290 /* code-challenge.app */,
+				F1B8547421C81F9600E40290 /* code-challengeTests.xctest */,
+				F1B8547F21C81F9600E40290 /* code-challengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F1B8545F21C81F9400E40290 /* LuckyDay */ = {
+		F1B8545F21C81F9400E40290 /* code-challenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1B8548821C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDay" */;
+			buildConfigurationList = F1B8548821C81F9600E40290 /* Build configuration list for PBXNativeTarget "code-challenge" */;
 			buildPhases = (
 				B2BF2853A77615F4C9E6122D /* [CP] Check Pods Manifest.lock */,
 				F1B8545C21C81F9400E40290 /* Sources */,
@@ -226,14 +226,14 @@
 			);
 			dependencies = (
 			);
-			name = LuckyDay;
+			name = "code-challenge";
 			productName = LuckyDay;
-			productReference = F1B8546021C81F9400E40290 /* LuckyDay.app */;
+			productReference = F1B8546021C81F9400E40290 /* code-challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F1B8547321C81F9600E40290 /* LuckyDayTests */ = {
+		F1B8547321C81F9600E40290 /* code-challengeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1B8548B21C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDayTests" */;
+			buildConfigurationList = F1B8548B21C81F9600E40290 /* Build configuration list for PBXNativeTarget "code-challengeTests" */;
 			buildPhases = (
 				32041880852C6C0AC9709C89 /* [CP] Check Pods Manifest.lock */,
 				F1B8547021C81F9600E40290 /* Sources */,
@@ -245,14 +245,14 @@
 			dependencies = (
 				F1B8547621C81F9600E40290 /* PBXTargetDependency */,
 			);
-			name = LuckyDayTests;
+			name = "code-challengeTests";
 			productName = LuckyDayTests;
-			productReference = F1B8547421C81F9600E40290 /* LuckyDayTests.xctest */;
+			productReference = F1B8547421C81F9600E40290 /* code-challengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F1B8547E21C81F9600E40290 /* LuckyDayUITests */ = {
+		F1B8547E21C81F9600E40290 /* code-challengeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1B8548E21C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDayUITests" */;
+			buildConfigurationList = F1B8548E21C81F9600E40290 /* Build configuration list for PBXNativeTarget "code-challengeUITests" */;
 			buildPhases = (
 				807D60056ABED4642420FC83 /* [CP] Check Pods Manifest.lock */,
 				F1B8547B21C81F9600E40290 /* Sources */,
@@ -264,9 +264,9 @@
 			dependencies = (
 				F1B8548121C81F9600E40290 /* PBXTargetDependency */,
 			);
-			name = LuckyDayUITests;
+			name = "code-challengeUITests";
 			productName = LuckyDayUITests;
-			productReference = F1B8547F21C81F9600E40290 /* LuckyDayUITests.xctest */;
+			productReference = F1B8547F21C81F9600E40290 /* code-challengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +292,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F1B8545B21C81F9400E40290 /* Build configuration list for PBXProject "LuckyDay" */;
+			buildConfigurationList = F1B8545B21C81F9400E40290 /* Build configuration list for PBXProject "code-challenge" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -305,9 +305,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1B8545F21C81F9400E40290 /* LuckyDay */,
-				F1B8547321C81F9600E40290 /* LuckyDayTests */,
-				F1B8547E21C81F9600E40290 /* LuckyDayUITests */,
+				F1B8545F21C81F9400E40290 /* code-challenge */,
+				F1B8547321C81F9600E40290 /* code-challengeTests */,
+				F1B8547E21C81F9600E40290 /* code-challengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -465,12 +465,12 @@
 /* Begin PBXTargetDependency section */
 		F1B8547621C81F9600E40290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F1B8545F21C81F9400E40290 /* LuckyDay */;
+			target = F1B8545F21C81F9400E40290 /* code-challenge */;
 			targetProxy = F1B8547521C81F9600E40290 /* PBXContainerItemProxy */;
 		};
 		F1B8548121C81F9600E40290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F1B8545F21C81F9400E40290 /* LuckyDay */;
+			target = F1B8545F21C81F9400E40290 /* code-challenge */;
 			targetProxy = F1B8548021C81F9600E40290 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -667,7 +667,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyDay.app/LuckyDay";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/code-challenge.app/code-challenge";
 			};
 			name = Debug;
 		};
@@ -689,7 +689,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyDay.app/LuckyDay";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/code-challenge.app/code-challenge";
 			};
 			name = Release;
 		};
@@ -738,7 +738,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1B8545B21C81F9400E40290 /* Build configuration list for PBXProject "LuckyDay" */ = {
+		F1B8545B21C81F9400E40290 /* Build configuration list for PBXProject "code-challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1B8548621C81F9600E40290 /* Debug */,
@@ -747,7 +747,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1B8548821C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDay" */ = {
+		F1B8548821C81F9600E40290 /* Build configuration list for PBXNativeTarget "code-challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1B8548921C81F9600E40290 /* Debug */,
@@ -756,7 +756,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1B8548B21C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDayTests" */ = {
+		F1B8548B21C81F9600E40290 /* Build configuration list for PBXNativeTarget "code-challengeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1B8548C21C81F9600E40290 /* Debug */,
@@ -765,7 +765,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1B8548E21C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDayUITests" */ = {
+		F1B8548E21C81F9600E40290 /* Build configuration list for PBXNativeTarget "code-challengeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1B8548F21C81F9600E40290 /* Debug */,
