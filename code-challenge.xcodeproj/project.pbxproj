@@ -14,8 +14,6 @@
 		F1B8546921C81F9400E40290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B8546721C81F9400E40290 /* Main.storyboard */; };
 		F1B8546B21C81F9600E40290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B8546A21C81F9600E40290 /* Assets.xcassets */; };
 		F1B8546E21C81F9600E40290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B8546C21C81F9600E40290 /* LaunchScreen.storyboard */; };
-		F1B8547921C81F9600E40290 /* LuckyDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8547821C81F9600E40290 /* LuckyDayTests.swift */; };
-		F1B8548421C81F9600E40290 /* LuckyDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8548321C81F9600E40290 /* LuckyDayUITests.swift */; };
 		F1B8549221C822DF00E40290 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8549121C822DF00E40290 /* SearchViewController.swift */; };
 		F1B8549621C82C2800E40290 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8549521C82C2800E40290 /* Post.swift */; };
 		F1B8549921C83D5C00E40290 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8549821C83D5C00E40290 /* PostCell.swift */; };
@@ -57,11 +55,7 @@
 		F1B8546D21C81F9600E40290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1B8546F21C81F9600E40290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1B8547421C81F9600E40290 /* code-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "code-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1B8547821C81F9600E40290 /* LuckyDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyDayTests.swift; sourceTree = "<group>"; };
-		F1B8547A21C81F9600E40290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1B8547F21C81F9600E40290 /* code-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "code-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1B8548321C81F9600E40290 /* LuckyDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyDayUITests.swift; sourceTree = "<group>"; };
-		F1B8548521C81F9600E40290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1B8549121C822DF00E40290 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F1B8549521C82C2800E40290 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		F1B8549821C83D5C00E40290 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -124,8 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				F1B8546221C81F9400E40290 /* LuckyDay */,
-				F1B8547721C81F9600E40290 /* LuckyDayTests */,
-				F1B8548221C81F9600E40290 /* LuckyDayUITests */,
 				F1B8546121C81F9400E40290 /* Products */,
 				62AE19B6B1816BFACD31D5BD /* Pods */,
 				7823D2C0313908D4A97069AE /* Frameworks */,
@@ -156,24 +148,6 @@
 				F1B8549C21C84E1C00E40290 /* Helpers */,
 			);
 			path = LuckyDay;
-			sourceTree = "<group>";
-		};
-		F1B8547721C81F9600E40290 /* LuckyDayTests */ = {
-			isa = PBXGroup;
-			children = (
-				F1B8547821C81F9600E40290 /* LuckyDayTests.swift */,
-				F1B8547A21C81F9600E40290 /* Info.plist */,
-			);
-			path = LuckyDayTests;
-			sourceTree = "<group>";
-		};
-		F1B8548221C81F9600E40290 /* LuckyDayUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F1B8548321C81F9600E40290 /* LuckyDayUITests.swift */,
-				F1B8548521C81F9600E40290 /* Info.plist */,
-			);
-			path = LuckyDayUITests;
 			sourceTree = "<group>";
 		};
 		F1B8549321C822E300E40290 /* Controller */ = {
@@ -448,7 +422,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1B8547921C81F9600E40290 /* LuckyDayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +429,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1B8548421C81F9600E40290 /* LuckyDayUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

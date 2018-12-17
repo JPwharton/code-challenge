@@ -64,7 +64,7 @@ extension SearchViewController: UITableViewDataSource {
       guard let cell = tableView.dequeueReusableCell(withIdentifier: self.cellID, for: indexPath) as? PostCell else {
          return UITableViewCell()
       }
-      if let post = self.post?[indexPath.row] {
+      if let post = self.post?[exist: indexPath.row] {
          cell.post = post
       }
       return cell
@@ -81,5 +81,11 @@ extension SearchViewController: UISearchBarDelegate {
       if let text = searchBar.text {
          self.fetchData(withSearchText: text)
       }
+   }
+}
+
+extension Collection where Indices.Iterator.Element == Index {
+   subscript (exist index: Index) -> Iterator.Element? {
+      return indices.contains(index) ? self[index] : nil
    }
 }
