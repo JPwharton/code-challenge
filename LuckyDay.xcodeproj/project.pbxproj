@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E6CEB68CFDABCF04F5FF491 /* Pods_LuckyDayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111D6A356C31219DD80628CB /* Pods_LuckyDayTests.framework */; };
+		9FB6394D379C1533938D0191 /* Pods_LuckyDayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D968BD6B9CB97736919B7BB2 /* Pods_LuckyDayUITests.framework */; };
+		C32AFBF8469B45F7EBF92AF4 /* Pods_LuckyDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733EBCCF9C44F087AC370CB8 /* Pods_LuckyDay.framework */; };
+		F1B8546421C81F9400E40290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8546321C81F9400E40290 /* AppDelegate.swift */; };
+		F1B8546921C81F9400E40290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B8546721C81F9400E40290 /* Main.storyboard */; };
+		F1B8546B21C81F9600E40290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B8546A21C81F9600E40290 /* Assets.xcassets */; };
+		F1B8546E21C81F9600E40290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B8546C21C81F9600E40290 /* LaunchScreen.storyboard */; };
+		F1B8547921C81F9600E40290 /* LuckyDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8547821C81F9600E40290 /* LuckyDayTests.swift */; };
+		F1B8548421C81F9600E40290 /* LuckyDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8548321C81F9600E40290 /* LuckyDayUITests.swift */; };
+		F1B8549221C822DF00E40290 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8549121C822DF00E40290 /* SearchViewController.swift */; };
+		F1B8549621C82C2800E40290 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8549521C82C2800E40290 /* Post.swift */; };
+		F1B8549921C83D5C00E40290 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8549821C83D5C00E40290 /* PostCell.swift */; };
+		F1B8549B21C84E0B00E40290 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8549A21C84E0B00E40290 /* Constants.swift */; };
+		F1B8549E21C84E5E00E40290 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B8549D21C84E5E00E40290 /* APIHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1B8547521C81F9600E40290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1B8545821C81F9400E40290 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1B8545F21C81F9400E40290;
+			remoteInfo = LuckyDay;
+		};
+		F1B8548021C81F9600E40290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1B8545821C81F9400E40290 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1B8545F21C81F9400E40290;
+			remoteInfo = LuckyDay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		111D6A356C31219DD80628CB /* Pods_LuckyDayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyDayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1278F36240A186AD5F305FB0 /* Pods-LuckyDayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyDayTests/Pods-LuckyDayTests.release.xcconfig"; sourceTree = "<group>"; };
+		59C4AA427915BD46C742D803 /* Pods-LuckyDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyDay/Pods-LuckyDay.release.xcconfig"; sourceTree = "<group>"; };
+		62CB2ED77199E6E66C9858F2 /* Pods-LuckyDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyDay/Pods-LuckyDay.debug.xcconfig"; sourceTree = "<group>"; };
+		64CC71012809B93E6818361C /* Pods-LuckyDayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyDayUITests/Pods-LuckyDayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		733EBCCF9C44F087AC370CB8 /* Pods_LuckyDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		795A9ECDDCD5639159D8AF07 /* Pods-LuckyDayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyDayTests/Pods-LuckyDayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9AA82B1870E067E8FE6422C /* Pods-LuckyDayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyDayUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuckyDayUITests/Pods-LuckyDayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D968BD6B9CB97736919B7BB2 /* Pods_LuckyDayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyDayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B8546021C81F9400E40290 /* LuckyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B8546321C81F9400E40290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1B8546821C81F9400E40290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1B8546A21C81F9600E40290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1B8546D21C81F9600E40290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1B8546F21C81F9600E40290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B8547421C81F9600E40290 /* LuckyDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B8547821C81F9600E40290 /* LuckyDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyDayTests.swift; sourceTree = "<group>"; };
+		F1B8547A21C81F9600E40290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B8547F21C81F9600E40290 /* LuckyDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B8548321C81F9600E40290 /* LuckyDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyDayUITests.swift; sourceTree = "<group>"; };
+		F1B8548521C81F9600E40290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B8549121C822DF00E40290 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F1B8549521C82C2800E40290 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F1B8549821C83D5C00E40290 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		F1B8549A21C84E0B00E40290 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F1B8549D21C84E5E00E40290 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1B8545D21C81F9400E40290 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32AFBF8469B45F7EBF92AF4 /* Pods_LuckyDay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B8547121C81F9600E40290 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6CEB68CFDABCF04F5FF491 /* Pods_LuckyDayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B8547C21C81F9600E40290 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB6394D379C1533938D0191 /* Pods_LuckyDayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62AE19B6B1816BFACD31D5BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62CB2ED77199E6E66C9858F2 /* Pods-LuckyDay.debug.xcconfig */,
+				59C4AA427915BD46C742D803 /* Pods-LuckyDay.release.xcconfig */,
+				795A9ECDDCD5639159D8AF07 /* Pods-LuckyDayTests.debug.xcconfig */,
+				1278F36240A186AD5F305FB0 /* Pods-LuckyDayTests.release.xcconfig */,
+				64CC71012809B93E6818361C /* Pods-LuckyDayUITests.debug.xcconfig */,
+				B9AA82B1870E067E8FE6422C /* Pods-LuckyDayUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7823D2C0313908D4A97069AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				733EBCCF9C44F087AC370CB8 /* Pods_LuckyDay.framework */,
+				111D6A356C31219DD80628CB /* Pods_LuckyDayTests.framework */,
+				D968BD6B9CB97736919B7BB2 /* Pods_LuckyDayUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1B8545721C81F9400E40290 = {
+			isa = PBXGroup;
+			children = (
+				F1B8546221C81F9400E40290 /* LuckyDay */,
+				F1B8547721C81F9600E40290 /* LuckyDayTests */,
+				F1B8548221C81F9600E40290 /* LuckyDayUITests */,
+				F1B8546121C81F9400E40290 /* Products */,
+				62AE19B6B1816BFACD31D5BD /* Pods */,
+				7823D2C0313908D4A97069AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1B8546121C81F9400E40290 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8546021C81F9400E40290 /* LuckyDay.app */,
+				F1B8547421C81F9600E40290 /* LuckyDayTests.xctest */,
+				F1B8547F21C81F9600E40290 /* LuckyDayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1B8546221C81F9400E40290 /* LuckyDay */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8549721C83D4E00E40290 /* Cells */,
+				F1B8546321C81F9400E40290 /* AppDelegate.swift */,
+				F1B8546721C81F9400E40290 /* Main.storyboard */,
+				F1B8546A21C81F9600E40290 /* Assets.xcassets */,
+				F1B8546C21C81F9600E40290 /* LaunchScreen.storyboard */,
+				F1B8546F21C81F9600E40290 /* Info.plist */,
+				F1B8549421C822EC00E40290 /* Model */,
+				F1B8549321C822E300E40290 /* Controller */,
+				F1B8549C21C84E1C00E40290 /* Helpers */,
+			);
+			path = LuckyDay;
+			sourceTree = "<group>";
+		};
+		F1B8547721C81F9600E40290 /* LuckyDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8547821C81F9600E40290 /* LuckyDayTests.swift */,
+				F1B8547A21C81F9600E40290 /* Info.plist */,
+			);
+			path = LuckyDayTests;
+			sourceTree = "<group>";
+		};
+		F1B8548221C81F9600E40290 /* LuckyDayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8548321C81F9600E40290 /* LuckyDayUITests.swift */,
+				F1B8548521C81F9600E40290 /* Info.plist */,
+			);
+			path = LuckyDayUITests;
+			sourceTree = "<group>";
+		};
+		F1B8549321C822E300E40290 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8549121C822DF00E40290 /* SearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1B8549421C822EC00E40290 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8549521C82C2800E40290 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1B8549721C83D4E00E40290 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8549821C83D5C00E40290 /* PostCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F1B8549C21C84E1C00E40290 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8549A21C84E0B00E40290 /* Constants.swift */,
+				F1B8549D21C84E5E00E40290 /* APIHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1B8545F21C81F9400E40290 /* LuckyDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B8548821C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDay" */;
+			buildPhases = (
+				B2BF2853A77615F4C9E6122D /* [CP] Check Pods Manifest.lock */,
+				F1B8545C21C81F9400E40290 /* Sources */,
+				F1B8545D21C81F9400E40290 /* Frameworks */,
+				F1B8545E21C81F9400E40290 /* Resources */,
+				250B3089DB7EAE054D502B10 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckyDay;
+			productName = LuckyDay;
+			productReference = F1B8546021C81F9400E40290 /* LuckyDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1B8547321C81F9600E40290 /* LuckyDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B8548B21C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDayTests" */;
+			buildPhases = (
+				32041880852C6C0AC9709C89 /* [CP] Check Pods Manifest.lock */,
+				F1B8547021C81F9600E40290 /* Sources */,
+				F1B8547121C81F9600E40290 /* Frameworks */,
+				F1B8547221C81F9600E40290 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1B8547621C81F9600E40290 /* PBXTargetDependency */,
+			);
+			name = LuckyDayTests;
+			productName = LuckyDayTests;
+			productReference = F1B8547421C81F9600E40290 /* LuckyDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1B8547E21C81F9600E40290 /* LuckyDayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B8548E21C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDayUITests" */;
+			buildPhases = (
+				807D60056ABED4642420FC83 /* [CP] Check Pods Manifest.lock */,
+				F1B8547B21C81F9600E40290 /* Sources */,
+				F1B8547C21C81F9600E40290 /* Frameworks */,
+				F1B8547D21C81F9600E40290 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1B8548121C81F9600E40290 /* PBXTargetDependency */,
+			);
+			name = LuckyDayUITests;
+			productName = LuckyDayUITests;
+			productReference = F1B8547F21C81F9600E40290 /* LuckyDayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1B8545821C81F9400E40290 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Greek APP";
+				TargetAttributes = {
+					F1B8545F21C81F9400E40290 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F1B8547321C81F9600E40290 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F1B8545F21C81F9400E40290;
+					};
+					F1B8547E21C81F9600E40290 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F1B8545F21C81F9400E40290;
+					};
+				};
+			};
+			buildConfigurationList = F1B8545B21C81F9400E40290 /* Build configuration list for PBXProject "LuckyDay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1B8545721C81F9400E40290;
+			productRefGroup = F1B8546121C81F9400E40290 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1B8545F21C81F9400E40290 /* LuckyDay */,
+				F1B8547321C81F9600E40290 /* LuckyDayTests */,
+				F1B8547E21C81F9600E40290 /* LuckyDayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1B8545E21C81F9400E40290 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B8546E21C81F9600E40290 /* LaunchScreen.storyboard in Resources */,
+				F1B8546B21C81F9600E40290 /* Assets.xcassets in Resources */,
+				F1B8546921C81F9400E40290 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B8547221C81F9600E40290 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B8547D21C81F9600E40290 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		250B3089DB7EAE054D502B10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LuckyDay/Pods-LuckyDay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LuckyDay/Pods-LuckyDay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32041880852C6C0AC9709C89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyDayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		807D60056ABED4642420FC83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyDayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2BF2853A77615F4C9E6122D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyDay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1B8545C21C81F9400E40290 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B8549E21C84E5E00E40290 /* APIHelper.swift in Sources */,
+				F1B8549221C822DF00E40290 /* SearchViewController.swift in Sources */,
+				F1B8549B21C84E0B00E40290 /* Constants.swift in Sources */,
+				F1B8546421C81F9400E40290 /* AppDelegate.swift in Sources */,
+				F1B8549621C82C2800E40290 /* Post.swift in Sources */,
+				F1B8549921C83D5C00E40290 /* PostCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B8547021C81F9600E40290 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B8547921C81F9600E40290 /* LuckyDayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B8547B21C81F9600E40290 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B8548421C81F9600E40290 /* LuckyDayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1B8547621C81F9600E40290 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1B8545F21C81F9400E40290 /* LuckyDay */;
+			targetProxy = F1B8547521C81F9600E40290 /* PBXContainerItemProxy */;
+		};
+		F1B8548121C81F9600E40290 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1B8545F21C81F9400E40290 /* LuckyDay */;
+			targetProxy = F1B8548021C81F9600E40290 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1B8546721C81F9400E40290 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1B8546821C81F9400E40290 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1B8546C21C81F9600E40290 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1B8546D21C81F9600E40290 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1B8548621C81F9600E40290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1B8548721C81F9600E40290 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1B8548921C81F9600E40290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CB2ED77199E6E66C9858F2 /* Pods-LuckyDay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y58S2QM826;
+				INFOPLIST_FILE = LuckyDay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.LuckyDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1B8548A21C81F9600E40290 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C4AA427915BD46C742D803 /* Pods-LuckyDay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y58S2QM826;
+				INFOPLIST_FILE = LuckyDay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.LuckyDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1B8548C21C81F9600E40290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795A9ECDDCD5639159D8AF07 /* Pods-LuckyDayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y58S2QM826;
+				INFOPLIST_FILE = LuckyDayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.LuckyDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyDay.app/LuckyDay";
+			};
+			name = Debug;
+		};
+		F1B8548D21C81F9600E40290 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1278F36240A186AD5F305FB0 /* Pods-LuckyDayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y58S2QM826;
+				INFOPLIST_FILE = LuckyDayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.LuckyDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyDay.app/LuckyDay";
+			};
+			name = Release;
+		};
+		F1B8548F21C81F9600E40290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64CC71012809B93E6818361C /* Pods-LuckyDayUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y58S2QM826;
+				INFOPLIST_FILE = LuckyDayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.LuckyDayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuckyDay;
+			};
+			name = Debug;
+		};
+		F1B8549021C81F9600E40290 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9AA82B1870E067E8FE6422C /* Pods-LuckyDayUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y58S2QM826;
+				INFOPLIST_FILE = LuckyDayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.greekappllc.LuckyDayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuckyDay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1B8545B21C81F9400E40290 /* Build configuration list for PBXProject "LuckyDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B8548621C81F9600E40290 /* Debug */,
+				F1B8548721C81F9600E40290 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B8548821C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B8548921C81F9600E40290 /* Debug */,
+				F1B8548A21C81F9600E40290 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B8548B21C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B8548C21C81F9600E40290 /* Debug */,
+				F1B8548D21C81F9600E40290 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B8548E21C81F9600E40290 /* Build configuration list for PBXNativeTarget "LuckyDayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B8548F21C81F9600E40290 /* Debug */,
+				F1B8549021C81F9600E40290 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1B8545821C81F9400E40290 /* Project object */;
+}
